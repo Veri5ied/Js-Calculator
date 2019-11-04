@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Calculator</title>
+</head>
+
+<body>
+    <div id="main-body">
+        <div>
+            <input type="button" id="AC" onclick="clearAll()" value="AC"> <span id="answerBox">0</span>
+        </div>
+        <div class="row">
+            <div class="row">
+                <input type="button" onclick="numericButton('7')" value="7">
+                <input type="button" onclick="numericButton('8')" value="8">
+                <input type="button" onclick="numericButton('9')" value="9">
+                <input type="button" onclick="operatorButton('+')" value="+">
+            </div>
+            <div class="row">
+                <input type="button" onclick="numericButton('4')" value="4">
+                <input type="button" onclick="numericButton('5')" value="5">
+                <input type="button" onclick="numericButton('6')" value="6">
+                <input type="button" onclick="operatorButton('-')" value="-">
+            </div>
+            <div class="row">
+                <input type="button" onclick="numericButton('1')" value="1">
+                <input type="button" onclick="numericButton('2')" value="2">
+                <input type="button" onclick="numericButton('3')" value="3">
+                <input type="button" onclick="operatorButton('x')" value="x">
+            </div>
+            <div class="row">
+                <input type="button" onclick="numericButton('0')" value="0">
+                <input type="button" onclick="numericButton('.')" value=".">
+                <input type="button" id="equals" onclick="calculateQueue(queue)" value="=">
+                <input type="button" onclick="operatorButton('/')" value="/">
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
